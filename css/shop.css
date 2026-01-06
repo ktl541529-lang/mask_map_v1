@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet');
+
+/* 像素點陣字體:https://fonts.googleapis.com/css2?family=DotGothic16&display=swap */
+/* 備用字體:https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC:wght@300;400;700&display=swap" rel="stylesheet */
+
+
+
+:root {
+
+    /* Warm Light (5) */
+    --color01: #FFC857;
+    /* warm-yellow */
+    --color02: #f7a0bc;
+    /* coral-pink */
+    --color03: #f7e2e9;
+    /* light-pink */
+    --color04: #FFF3E0;
+    /* warm-cream */
+    --color05: #FFE7D3;
+    /* warm-haze */
+
+    /* Warm Dark (5) */
+    --color06: #8A3B12;
+    /* warm-burnt-orange */
+    --color07: #7A4B00;
+    /* dark-amber */
+    --color08: #8B2626;
+    /* warm-brick */
+    --color09: #9A2A4A;
+    /* deep-coral */
+    --color10: #712331;
+    /* warm-maroon */
+
+    /* Cool Dark (5) */
+    --color11: #0A1A2F;
+    /* cool-navy */
+    --color12: #112A46;
+    /* midnight-blue */
+    --color13: #1A4D6A;
+    /* storm-blue */
+    --color14: #0F5959;
+    /* cool-teal */
+    --color15: #2C3E50;
+    /* cold-steel */
+
+    /* Cool Light (5) */
+    --color16: #F5FBFF;
+    /* frost-white */
+    --color17: #E3F4FF;
+    /* ice-blue */
+    --color18: #D4EAF7;
+    /* pale-sky */
+    --color19: #C9EFEF;
+    /* light-teal */
+    --color20: #CCE4F0;
+    /* sky-haze */
+
+    /* 通用 */
+
+    /* 文字顏色 */
+    --tcolor01: #e1ebf1;
+    --tcolor02: #013453;
+    --tcolor03: #fff0de;
+    --tcolor04: #57330b;
+
+}
+
+
+.bg-s01 {
+    background-color: var(--color08);
+}
+
+.bg-s02 {
+    background-color: var(--color09);
+}
+
+.bg-s03 {
+    background-color: var(--color10);
+}
+
+.bg-s04 {
+    background-color: var(--color12);
+}
+
+.bg-s05 {
+    background-color: var(--color13);
+}
+
+.bg-s06 {
+    background-color: var(--color14);
+}
+
+
+
+.navbar .nav-link {
+    color: var(--tcolor04) !important;
+}
+
+body {
+    font-family: "DotGothic16", sans-serif;
+}
+
+/* 字體粗細 */
+.fw-100 {
+    font-weight: 100;
+}
+
+.fw-200 {
+    font-weight: 200;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+/* roller應用 */
+.roller-box-t {
+    position: relative;
+    overflow: hidden;
+}
+
+.roller-box-t .roller {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transform: translateY(-100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.roller-box-t:hover .roller {
+    transform: translateY(0);
+    transition: transform 1.5s;
+}
+
+.roller-box-b {
+    position: relative;
+    overflow: hidden;
+}
+
+.roller-box-b .roller {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transform: translateY(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.roller-box-b:hover .roller {
+    transform: translateY(0);
+    transition: transform 1.5s;
+}
+
+.roller-box-left {
+    position: relative;
+    overflow: hidden;
+}
+
+.roller-box-left .roller {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transform: translateX(-100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.roller-box-left:hover .roller {
+    transform: translateX(0);
+    transition: transform 1.5s;
+}
+
+.roller-box-right {
+    position: relative;
+    overflow: hidden;
+}
+
+.roller-box-right .roller {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.roller-box-right:hover .roller {
+    transform: translateX(0);
+    transition: transform 1.5s;
+}
+
+.bg-cover {
+    background-size: cover;
+    /* 縮放填滿區域，不變形 */
+    background-position: center;
+    /* 圖片自動置中 */
+    background-repeat: no-repeat;
+    /* 避免重複 */
+}
+
+body {
+    font-family: 'Microsoft JhengHei', sans-serif;
+    background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+}
+

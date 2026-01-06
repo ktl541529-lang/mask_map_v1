@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet');
+        
+/* 像素點陣字體:https://fonts.googleapis.com/css2?family=DotGothic16&display=swap */
+/* 備用字體:https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC:wght@300;400;700&display=swap" rel="stylesheet */
+
+
+
+:root {
+    --color01: #a9dfed;
+    --color02: #EBD6E8;
+    --color03: #84c0e9;
+    --color04: #37419A;
+    --color05: #c9e2f3;
+    --coloe06: #33C7F7;
+    --color07: #DFA0C8;
+    --color08: #804c10;
+    --color09: #25255F;
+    --color10: #cfb285;
+    --color11: #cc188a;
+    
+
+    /* 通用 */
+
+    /* 文字顏色 */
+    --tlcolor01: #e1ebf1;
+    --tdcolor02: #043c5f;
+
+    /* 背景色 */
+    --bcolor01:#a9dfed;
+    
+}
+
+body {
+    font-family: "DotGothic16", sans-serif;
+}
+
+/* 字體粗細 */
+.fw-100{
+    font width: 100;
+}
+.fw-200{
+    font width: 200;
+}
+.fw-300{
+    font width: 300;
+}
+.fw-400{
+    font width: 400;
+}
+.fw-500{
+    font width: 500;
+}
+.fw-600{
+    font width: 600;
+}
+.fw-700{
+    font width: 700;
+}
+.fw-800{
+    font width: 800;
+}
+.fw-900{
+    font width: 900;
+}
+
+/* ✅ 自訂顏色類別 */
+.bg-r01 { background-color: #ff1900; }  /* 紅 */
+.bg-r02 { background-color: #ffd7d3; }  /* 紅 */
+.bg-r03 { background-color: #f3a79e; }  /* 紅 */
+.bg-r04 { background-color: #f77b6d; }  /* 紅 */
+.bg-r05 { background-color: #970f00; }  /* 紅 */
+
+.bg-o01 { background-color: #f77700; }  /* 橙 */
+.bg-o02 { background-color: #f7dfca; }  /* 橙 */
+.bg-o03 { background-color: #f1c193; }  /* 橙 */
+.bg-o04 { background-color: #faab61; }  /* 橙 */
+.bg-o05 { background-color: #924700; }  /* 橙 */
+
+.bg-y01 { background-color: #ffe600; }  /* 黃 */
+.bg-y02 { background-color: #fffacd; }  /* 黃 */
+.bg-y03 { background-color: #ffe600; }  /* 黃 */
+.bg-y04 { background-color: #ffe600; }  /* 黃 */
+.bg-y05 { background-color: #918200; }  /* 黃 */
+
+.bg-g01 { background-color: #15ff00; }  /* 綠 */
+.bg-g02 { background-color: #d2f5ce; }  /* 綠 */
+.bg-g03 { background-color: #a3fd9b; }  /* 綠 */
+.bg-g04 { background-color: #5efc50; }  /* 綠 */
+.bg-g05 { background-color: #0c9100; }  /* 綠 */
+
+.bg-b01 { background-color: #003cff; }  /* 藍 */
+.bg-b02 { background-color: #ccd6f8; }  /* 藍 */
+.bg-b03 { background-color: #9ab1ff; }  /* 藍 */
+.bg-b04 { background-color: #6287ff; }  /* 藍 */
+.bg-b05 { background-color: #001d7a; }  /* 藍 */
+
+.bg-p01 { background-color: #9900ff; }  /* 紫 */
+.bg-p02 { background-color: #ebd2fc; }  /* 紫 */
+.bg-p03 { background-color: #daa1ff; }  /* 紫 */
+.bg-p04 { background-color: #c36efc; }  /* 紫 */
+.bg-p05 { background-color: #53008a; }  /* 紫 */
+
+
+/* roller應用 */
+.roller-box-t {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .roller-box-t .roller {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            transform: translateY(-100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .roller-box-t:hover .roller {
+            transform: translateY(0);
+            transition: transform 1.5s;
+        }
+
+    .roller-box-b {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .roller-box-b .roller {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            transform: translateY(100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .roller-box-b:hover .roller {
+            transform: translateY(0);
+            transition: transform 1.5s;
+        }
+
+    .roller-box-left {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .roller-box-left .roller {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            transform: translateX(-100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .roller-box-left:hover .roller {
+            transform: translateX(0);
+            transition: transform 1.5s;
+        }
+
+    .roller-box-right {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .roller-box-right .roller {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            transform: translateX(100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .roller-box-right:hover .roller {
+            transform: translateX(0);
+            transition: transform 1.5s;
+        }

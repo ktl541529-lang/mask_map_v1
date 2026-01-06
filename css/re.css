@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+
+/* 備用字體：
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC:wght@300;400;700&display=swap");
+*/
+
+:root {
+    /* 主色系 */
+    --color01: #a9dfed;
+    --color02: #EBD6E8;
+    --color03: #84c0e9;
+    --color04: #37419A;
+    --color05: #c9e2f3;
+    --color06: #33C7F7;   /* 修正 coloe06 → color06 */
+    --color07: #DFA0C8;
+    --color08: #804c10;
+    --color09: #25255F;
+    --color10: #cfb285;
+    --color11: #cc188a;
+
+    /* 文字色 */
+    --tlcolor01: #e1ebf1;
+    --tdcolor02: #043c5f;
+
+    /* 背景色 */
+    --bcolor01: #a9dfed;
+}
+
+/* -----------------------------------
+   全域設定
+----------------------------------- */
+body {
+    font-family: "DotGothic16", sans-serif;
+}
+
+/* -----------------------------------
+   字體粗細 
+----------------------------------- */
+.fw-100 { font-weight: 100; }
+.fw-200 { font-weight: 200; }
+.fw-300 { font-weight: 300; }
+.fw-400 { font-weight: 400; }
+.fw-500 { font-weight: 500; }
+.fw-600 { font-weight: 600; }
+.fw-700 { font-weight: 700; }
+.fw-800 { font-weight: 800; }
+.fw-900 { font-weight: 900; }
+
+
+/* =========================================
+   春天 Spring Theme（粉嫩柔和）
+========================================= */
+:root {
+    /* 春天背景色系 */
+    --s-bg01: #ffeaf1; /* 櫻花粉 */
+    --s-bg02: #fff8d9; /* 奶油黃 */
+    --s-bg03: #e0f7d4; /* 嫩草綠 */
+    --s-bg04: #dff3ff; /* 天空淡藍 */
+    --s-bg05: #f7d9ff; /* 紫丁香 */
+    --s-bg06: #ffdfdf; /* 溫柔玫瑰 */
+    --s-bg07: #c8f7e0; /* 薄荷綠 */
+    --s-bg08: #f9e6c8; /* 淡杏桃 */
+    --s-bg09: #cfe9ff; /* 清晨藍 */
+    --s-bg10: #ffe3e3; /* 早春粉 */
+
+    /* 春天文字色 */
+    --s-text01: #b73562; /* 春桃紅 */
+    --s-text02: #698f2b; /* 嫩草綠 */
+    --s-text03: #3a78a1; /* 春天空藍 */
+    --s-text04: #8a5bb2; /* 薰衣草紫 */
+    --s-text05: #b26e52; /* 早春橘木色 */
+}
+
+/* 春天背景類別 */
+.bg-s01 { background-color: var(--s-bg01); }
+.bg-s02 { background-color: var(--s-bg02); }
+.bg-s03 { background-color: var(--s-bg03); }
+.bg-s04 { background-color: var(--s-bg04); }
+.bg-s05 { background-color: var(--s-bg05); }
+.bg-s06 { background-color: var(--s-bg06); }
+.bg-s07 { background-color: var(--s-bg07); }
+.bg-s08 { background-color: var(--s-bg08); }
+.bg-s09 { background-color: var(--s-bg09); }
+.bg-s10 { background-color: var(--s-bg10); }
+
+/* 春天文字顏色 */
+.text-s01 { color: var(--s-text01); }
+.text-s02 { color: var(--s-text02); }
+.text-s03 { color: var(--s-text03); }
+.text-s04 { color: var(--s-text04); }
+.text-s05 { color: var(--s-text05); }
+
+
+/* =========================================
+   冬天 Winter Theme（冷冽乾淨）
+========================================= */
+:root {
+    /* 冬天背景色系 */
+    --w-bg01: #e9f4ff; /* 冰川藍 */
+    --w-bg02: #f4f7fa; /* 霜白灰 */
+    --w-bg03: #d7e5f0; /* 冬日霧藍 */
+    --w-bg04: #c6d4e1; /* 冰霧灰藍 */
+    --w-bg05: #b8c2d6; /* 冬暮靛藍 */
+    --w-bg06: #f0eefe; /* 寒霧紫 */
+    --w-bg07: #e3eef2; /* 冷白霧綠 */
+    --w-bg08: #d8dbe6; /* 雪灰紫 */
+    --w-bg09: #b0c7dd; /* 靜夜藍灰 */
+    --w-bg10: #e2e9f4; /* 霜河藍 */
+
+    /* 冬天文字色 */
+    --w-text01: #30475e; /* 冬夜深藍 */
+    --w-text02: #52667a; /* 霜藍灰 */
+    --w-text03: #6b5c87; /* 寒紫霧 */
+    --w-text04: #2f4f4f; /* 冷杉綠灰 */
+    --w-text05: #5c5c5c; /* 冬石深灰 */
+}
+
+/* 冬天背景類別 */
+.bg-w01 { background-color: var(--w-bg01); }
+.bg-w02 { background-color: var(--w-bg02); }
+.bg-w03 { background-color: var(--w-bg03); }
+.bg-w04 { background-color: var(--w-bg04); }
+.bg-w05 { background-color: var(--w-bg05); }
+.bg-w06 { background-color: var(--w-bg06); }
+.bg-w07 { background-color: var(--w-bg07); }
+.bg-w08 { background-color: var(--w-bg08); }
+.bg-w09 { background-color: var(--w-bg09); }
+.bg-w10 { background-color: var(--w-bg10); }
+
+/* 冬天文字顏色 */
+.text-w01 { color: var(--w-text01); }
+.text-w02 { color: var(--w-text02); }
+.text-w03 { color: var(--w-text03); }
+.text-w04 { color: var(--w-text04); }
+.text-w05 { color: var(--w-text05); }
+
+
+/* -----------------------------------
+   Roller 動畫效果（上、下、左、右）
+----------------------------------- */
+.roller-box-t,
+.roller-box-b,
+.roller-box-left,
+.roller-box-right {
+    position: relative;
+    overflow: hidden;
+}
+
+.roller-box-t .roller,
+.roller-box-b .roller,
+.roller-box-left .roller,
+.roller-box-right .roller {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1.5s;
+}
+
+/* 上滑入 */
+.roller-box-t .roller {
+    transform: translateY(-100%);
+}
+.roller-box-t:hover .roller {
+    transform: translateY(0);
+}
+
+/* 下滑入 */
+.roller-box-b .roller {
+    transform: translateY(100%);
+}
+.roller-box-b:hover .roller {
+    transform: translateY(0);
+}
+
+/* 左滑入 */
+.roller-box-left .roller {
+    transform: translateX(-100%);
+}
+.roller-box-left:hover .roller {
+    transform: translateX(0);
+}
+
+/* 右滑入 */
+.roller-box-right .roller {
+    transform: translateX(100%);
+}
+.roller-box-right:hover .roller {
+    transform: translateX(0);
+}

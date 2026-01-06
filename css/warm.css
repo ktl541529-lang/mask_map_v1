@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC:wght@300;400;700&display=swap" rel="stylesheet');
+        
+/* 像素點陣字體:https://fonts.googleapis.com/css2?family=DotGothic16&display=swap */
+
+:root {
+    
+/* -------------------------------------------
+   🍃 Warm Spring & Autumn Soft Color Palette
+   Keyword-inspired: 溫暖、春天、粉嫩、輕柔、秋天、松鼠、栗子、暖陽
+   ------------------------------------------- */
+
+/* 🌸 春天粉嫩 Spring Soft */
+:root {
+    --spring-blossom:      #FFD9E8; /* 粉嫩櫻花 背景、區塊、按鈕 hover*/
+    --spring-petal:        #FFEAF4; /* 更輕柔粉雲 大面積背景、版面底色*/
+    --spring-rose:         #FFB7CE; /* 玫瑰粉 強調按鈕、標題背景*/
+
+    /* 🌿 春天嫩綠 */
+    --spring-leaf:         #D8F3DC; /* 柔嫩葉綠 表單區塊背景*/
+    --spring-fresh:        #B7E4C7; /* 清新嫩綠 標籤、卡片框線*/
+    --spring-mint:         #CFFFE5; /* 清爽薄荷綠 清爽背景或提示框*/
+
+    /* ☀️ 暖陽光線 Sun Warm */
+    --warm-sun:            #FFE8C2; /* 暖陽奶油黃 標題區、重要提示背景*/
+    --soft-sunbeam:        #FFD9A0; /* 粉暖陽光 卡片背景*/
+    --golden-sun:          #FFCD73; /* 金暖日照 主要按鈕*/
+
+    /* 🍁 秋天溫柔 Autumn Soft */
+    --autumn-soft-brown:   #DDB67D; /* 柔茶棕 卡片/區塊背景*/
+    --autumn-hazelnut:     #C59F75; /* 榛果棕 UI 按鈕、標籤*/
+    --autumn-maple:        #E8C9A3; /* 柔楓糖棕 第二主色*/
+
+    /* 🐿️ 松鼠與栗子 Squirrel & Chestnut */
+    --squirrel-brown:      #A46B44; /* 溫暖松鼠棕 主標題色、重點文字*/
+    --chestnut-cream:      #E7D2B9; /* 栗子奶油米 柔色背景*/
+    --warm-chestnut:       #B9825A; /* 栗子咖啡棕 標題條、導航列*/
+
+    /* ✨ 文字色 Text Colors */
+    --text-brown:     #5C3B28; /* 溫柔深棕 深色標題*/
+    --text-gray:      #6E6E6E; /* 柔霧灰 內文、輔助文字*/
+    --text-dark:       #704F29; /* 暖陽深咖 次要標題*/
+}
+
+    
+}
+
+body {
+    font-family: "DotGothic16", sans-serif;
+}
+
+/* 字體粗細 */
+.fw-100{
+    font width: 100;
+}
+.fw-200{
+    font width: 200;
+}
+.fw-300{
+    font width: 300;
+}
+.fw-400{
+    font width: 400;
+}
+.fw-500{
+    font width: 500;
+}
+.fw-600{
+    font width: 600;
+}
+.fw-700{
+    font width: 700;
+}
+.fw-800{
+    font width: 800;
+}
+.fw-900{
+    font width: 900;
+}
+
+/* ✅ 自訂顏色類別 */
+.bg-01 { background-color: #6fd2f0; }  /* 天藍 */
+.bg-02 { background-color: #0765ca; }  /* 深藍 */
+.bg-03 { background-color: #117a65; }  /* 綠色 */
+.bg-04 { background-color: #ffb700; }  /* 橘黃 */
+.bg-05 { background-color: #e74c3c; }  /* 紅色 */
+.bg-06 { background-color: #a7e7c4; }  /* 淺綠 */
+.bg-07 { background-color: #b390e0; }  /* 淡紫 */
+.bg-08 { background-color: #7333eb; }  /* 深紫 */
+.bg-09 { background-color: #daace0; }  /* 粉紫 */
+.bg-10 { background-color: #fff59d; }  /* 淡黃 */
+
+/* roller應用 */
+.roller-box-t {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .roller-box-t .roller {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            transform: translateY(-100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .roller-box-t:hover .roller {
+            transform: translateY(0);
+            transition: transform 1.5s;
+        }
+
+    .roller-box-b {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .roller-box-b .roller {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            transform: translateY(100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .roller-box-b:hover .roller {
+            transform: translateY(0);
+            transition: transform 1.5s;
+        }
+
+    .roller-box-left {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .roller-box-left .roller {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            transform: translateX(-100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .roller-box-left:hover .roller {
+            transform: translateX(0);
+            transition: transform 1.5s;
+        }
+
+    .roller-box-right {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .roller-box-right .roller {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            transform: translateX(100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .roller-box-right:hover .roller {
+            transform: translateX(0);
+            transition: transform 1.5s;
+        }
